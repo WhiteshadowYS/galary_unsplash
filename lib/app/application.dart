@@ -1,7 +1,9 @@
 import 'package:digital_home/dictionary/flutter_dictionary.dart';
 import 'package:digital_home/store/app/app_state.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';
 import 'package:redux/redux.dart';
 
 class Application extends StatefulWidget {
@@ -35,13 +37,13 @@ class _ApplicationState extends State<Application> {
           GlobalMaterialLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        locale: Locale(BASE_LOCALE),
+        locale: Locale('en'),
         supportedLocales: [
-          Locale(HE_LOCALE),
+          Locale('en'),
         ],
-        home: SplashScreenPage(),
+        home: Scaffold(),
         navigatorKey: NavigatorHolder.navigatorKey,
-        onGenerateRoute: (RouteSettings settings) => AppRouter.onGenerateRoute(settings),
+//        onGenerateRoute: (RouteSettings settings) => AppRouter.onGenerateRoute(settings),
       ),
     );
   }
