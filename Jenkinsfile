@@ -11,11 +11,6 @@ pipeline {
                 sh "curl -O https://raw.githubusercontent.com/eriwen/lcov-to-cobertura-xml/master/lcov_cobertura/lcov_cobertura.py"
             }
         }
-        stage ('Change Flutter Version') {
-            steps {
-                sh "flutter version 1.12.13+hotfix.9"
-            }
-        }
         stage ('Flutter Clean') {
             steps {
                 sh "flutter clean"
@@ -37,10 +32,9 @@ pipeline {
                 }
             }
         }
-        stage('Run Analyzer') {
-            steps {
-                sh "dartanalyzer --options analysis_options.yaml ."
-            }
+        stage('Success') {
+          steps {
+          }
         }
     }
 }
