@@ -32,9 +32,5 @@ pipeline {
                 }
             }
         }
-        stage('Success') {
-          steps {
-          }
-        }
     }
 }
