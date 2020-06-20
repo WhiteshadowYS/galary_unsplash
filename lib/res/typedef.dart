@@ -1,0 +1,1 @@
+typedef ChangeLanguageFunction = void Function(String);

@@ -19,33 +19,33 @@ class RouteHelper {
   Route onGenerateRoute(RouteSettings settings) {
     switch(settings.name) {
       case ROUTE_SPLASH_SCREEN:
-        return defaultRoute(
+        return _defaultRoute(
           settings: settings,
           page: SplashScreen(),
         );
 
       case ROUTE_AUTH_PAGE:
-        return defaultRoute(
+        return _defaultRoute(
           settings: settings,
           page: AuthPage(),
         );
 
       case ROUTE_HOME_PAGE:
-        return defaultRoute(
+        return _defaultRoute(
           settings: settings,
           page: HomePage(),
         );
 
 
       default:
-        return defaultRoute(
+        return _defaultRoute(
           settings: settings,
           page: UnknownPage(),
         );
     }
   }
 
-  MaterialPageRoute defaultRoute({RouteSettings settings, Widget page}) {
+  MaterialPageRoute _defaultRoute({RouteSettings settings, Widget page}) {
     return MaterialPageRoute(
       settings: settings,
       builder: (BuildContext context) => page,
