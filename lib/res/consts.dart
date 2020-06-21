@@ -17,6 +17,6 @@ const String EN_LOCALE = 'en';
 
 // region [ScreenUtil]
 const bool DESIGN_SCREEN_ALLOW_FONT_SCALING = true;
-const double DESIGN_SCREEN_HEIGHT = 812.0;
-const double DESIGN_SCREEN_WIDTH = 375.0;
+const double DESIGN_SCREEN_HEIGHT = 640.0;
+const double DESIGN_SCREEN_WIDTH = 360.0;
 // endregion

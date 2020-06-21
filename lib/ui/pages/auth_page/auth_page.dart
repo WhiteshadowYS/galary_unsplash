@@ -13,8 +13,8 @@ class AuthPage extends StatelessWidget {
           children: <Widget>[
             Spacer(),
             Container(
-              height: 200,
-              width: 200,
+              height: 200.h,
+              width: 200.h,
             ),
             const SizedBox(height: 24.0),
             Container(
