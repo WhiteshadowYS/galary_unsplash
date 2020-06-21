@@ -10,7 +10,7 @@ class MainLayout extends StatelessWidget {
     @required this.child,
     this.appBar,
     this.resizeToAvoidBottomPadding = false,
-  }) : assert(child == null, throw ('Child must be initialize'));
+  }) : assert(child != null, throw ('Child must be initialize'));
 
   @override
   Widget build(BuildContext context) {

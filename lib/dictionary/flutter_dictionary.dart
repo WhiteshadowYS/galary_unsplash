@@ -1,3 +1,4 @@
+import 'package:digital_home/dictionary/data/eu.dart';
 import 'package:digital_home/dictionary/language.dart';
 import 'package:flutter/foundation.dart' show SynchronousFuture;
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class FlutterDictionary {
 
   FlutterDictionary(this.locale) {
     // set up of default language
-    language = Language();
+    language = en;
   }
 
   static FlutterDictionary of(BuildContext context) {
@@ -44,7 +45,7 @@ class FlutterDictionaryDelegate extends LocalizationsDelegate<FlutterDictionary>
   ///locales added here are supported by the dictionary, but not yet by the app
   @override
   bool isSupported(Locale locale) {
-    return ['he'].contains(locale.languageCode);
+    return ['en', 'ru', 'uk'].contains(locale.languageCode);
   }
 
   @override

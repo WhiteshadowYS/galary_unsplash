@@ -2,6 +2,8 @@ import 'package:digital_home/dictionary/flutter_dictionary.dart';
 import 'package:digital_home/helpers/route_helper.dart';
 import 'package:digital_home/res/consts.dart';
 import 'package:digital_home/store/app/app_state.dart';
+import 'package:digital_home/store/shared/initialization/initialize_selectors.dart';
+import 'package:digital_home/ui/pages/shared/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_redux/flutter_redux.dart';
@@ -21,13 +23,8 @@ class Application extends StatefulWidget {
 class _ApplicationState extends State<Application> {
   @override
   void initState() {
-    ScreenUtil.init(
-      context,
-      height: DESIGN_SCREEN_HEIGHT,
-      width: DESIGN_SCREEN_WIDTH,
-      allowFontScaling: DESIGN_SCREEN_ALLOW_FONT_SCALING,
-    );
     super.initState();
+    InitializeSelectors.startInitialization(widget.store);
   }
 
   @override
@@ -50,7 +47,7 @@ class _ApplicationState extends State<Application> {
         supportedLocales: [
           Locale(BASE_LOCALE),
         ],
-        home: Scaffold(),
+        home: SplashScreen(),
         navigatorKey: NavigatorHolder.navigatorKey,
         onGenerateRoute: (RouteSettings settings) => RouteHelper.instance.onGenerateRoute(settings),
       ),

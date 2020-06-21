@@ -36,7 +36,6 @@ class RouteHelper {
           page: HomePage(),
         );
 
-
       default:
         return _defaultRoute(
           settings: settings,

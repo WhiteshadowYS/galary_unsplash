@@ -8,7 +8,6 @@ class DefaultLoader extends StatelessWidget {
       child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: double.infinity,
         child: CircularProgressIndicator(),
       ),
     );
