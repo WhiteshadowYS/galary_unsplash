@@ -1,22 +1,22 @@
-
 import 'package:digital_home/store/shared/base_action.dart';
-import 'package:digital_home/store/shared/loader/loader_keys.dart';
-
-class ChangeLoaderState extends BaseAction {
-  bool newState;
-  double opacity;
-
-  ChangeLoaderState({
-    this.newState,
-    this.opacity,
-  }) : super(type: 'ChangeLoaderState');
-}
+import 'package:digital_home/store/shared/loader/loader_state.dart';
+import 'package:digital_home/store/shared/models/loader.dart';
+import 'package:flutter/cupertino.dart';
 
 // region [LOADING ACTIONS]
-class ChangeLoading extends BaseAction {
-  final LoadingKeys loadingKey;
-  final bool nextValue;
+class StartLoading extends BaseAction {
+  final LoaderDialog loader;
 
-  ChangeLoading({this.loadingKey, this.nextValue}) : super(type: 'ChangeLoading');
+  StartLoading({
+    @required this.loader,
+  }) : super(type: 'ChangeLoading');
+}
+
+class StopLoading extends BaseAction {
+  final LoaderKey loaderKey;
+
+  StopLoading({
+    @required this.loaderKey,
+  }) : super(type: 'StopLoading');
 }
 // endregion

@@ -4,24 +4,31 @@ import 'package:flutter/material.dart';
 class MainLayout extends StatelessWidget {
   final bool resizeToAvoidBottomPadding;
   final PreferredSizeWidget appBar;
+  final Color bgColor;
   final Widget child;
 
   MainLayout({
     @required this.child,
     this.appBar,
+    this.bgColor = BG_COLOR,
     this.resizeToAvoidBottomPadding = false,
   }) : assert(child != null, throw ('Child must be initialize'));
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomPadding: resizeToAvoidBottomPadding,
-      appBar: appBar,
-      backgroundColor: BG_COLOR,
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        child: child,
+    return WillPopScope(
+      onWillPop: () async {
+        return false;
+      },
+      child: Scaffold(
+        resizeToAvoidBottomPadding: resizeToAvoidBottomPadding,
+        appBar: appBar,
+        backgroundColor: bgColor,
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: child,
+        ),
       ),
     );
   }

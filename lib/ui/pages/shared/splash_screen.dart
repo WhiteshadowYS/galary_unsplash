@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_version/get_version.dart';
-import 'package:logger/logger.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -22,7 +21,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ScreenUtil.init(
-        context,
         height: DESIGN_SCREEN_HEIGHT,
         width: DESIGN_SCREEN_WIDTH,
         allowFontScaling: DESIGN_SCREEN_ALLOW_FONT_SCALING,

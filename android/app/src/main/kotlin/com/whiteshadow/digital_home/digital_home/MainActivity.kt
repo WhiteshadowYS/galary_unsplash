@@ -1,4 +1,4 @@
-package com.whiteshadow.digital_home.digital_home
+package com.whiteshadow.digitalHome
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

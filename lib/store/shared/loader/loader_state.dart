@@ -1,36 +1,55 @@
 import 'dart:collection';
+import 'dart:html';
 
-import 'package:digital_home/store/shared/loader/loader_keys.dart';
+import 'package:digital_home/store/shared/loader/loader_actions.dart';
+import 'package:digital_home/store/shared/models/loader.dart';
+import 'package:digital_home/store/shared/models/reducer.dart';
+import 'package:flutter/cupertino.dart';
+
+enum LoaderKey {
+  initializationLoading,
+  loginLoading,
+}
 
 class LoaderState {
-  HashMap<LoadingKeys, bool> loadingKeys;
-
-  bool isLoaderExist;
-  double opacity;
+  List<LoaderDialog> loaders;
 
   LoaderState({
-    this.loadingKeys,
-    this.isLoaderExist,
-    this.opacity,
+    @required this.loaders,
   });
 
   factory LoaderState.initial() {
     return LoaderState(
-      loadingKeys: HashMap(),
-      isLoaderExist: false,
-      opacity: 1.0,
+      loaders: List(),
     );
   }
 
   LoaderState copyWith({
-    HashMap<LoadingKeys, bool> loadingKeys,
-    bool isLoaderExist,
-    double opacity,
+    List<LoaderDialog> loaders,
   }) {
     return LoaderState(
-      loadingKeys: loadingKeys ?? this.loadingKeys,
-      isLoaderExist: isLoaderExist ?? this.isLoaderExist,
-      opacity: opacity ?? this.opacity,
+      loaders: loaders ?? this.loaders,
+    );
+  }
+
+  LoaderState reducer(dynamic action) {
+    return Reducer<LoaderState>(
+      actions: HashMap.from({
+        StartLoading: (dynamic action) => startLoading(action as StartLoading),
+        StopLoading: (dynamic action) => stopLoading(action as StopLoading),
+      }),
+    ).updateState(action, this);
+  }
+
+  LoaderState startLoading(StartLoading action) {
+    return this.copyWith(
+      loaders: this.loaders..add(action.loader),
+    );
+  }
+
+  LoaderState stopLoading(StopLoading action) {
+    return this.copyWith(
+      loaders: this.loaders..removeWhere((loader) => loader.loaderKey == action.loaderKey),
     );
   }
 }

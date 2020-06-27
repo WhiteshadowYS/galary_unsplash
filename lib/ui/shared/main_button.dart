@@ -12,6 +12,7 @@ class MainButton extends StatelessWidget {
 
   final Widget child;
 
+  final List<BoxShadow> shadows;
   final Color color;
   final Color splashColor;
 
@@ -20,6 +21,7 @@ class MainButton extends StatelessWidget {
   MainButton({
     @required this.child,
     @required this.onPressed,
+    this.shadows,
     this.margin = const EdgeInsets.all(16.0),
     this.padding = const EdgeInsets.all(0.0),
     this.width = double.infinity,
@@ -27,8 +29,8 @@ class MainButton extends StatelessWidget {
     this.color = Colors.red,
     this.splashColor = Colors.white,
     this.borderRadius = 16.0,
-  })  : assert(child == null, throw ('$TAG => throw: Child must be initialize')),
-        assert(onPressed == null, throw ('$TAG => throw: onPressed must be initialize'));
+  })  : assert(child != null, throw ('$TAG => throw: Child must be initialize')),
+        assert(onPressed != null, throw ('$TAG => throw: onPressed must be initialize'));
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +38,7 @@ class MainButton extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(borderRadius),
+        boxShadow: shadows,
       ),
       margin: margin,
       width: width,
@@ -43,6 +46,7 @@ class MainButton extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
+          borderRadius: BorderRadius.circular(borderRadius),
           splashColor: splashColor,
           highlightColor: splashColor.withOpacity(0.5),
           onTap: () {

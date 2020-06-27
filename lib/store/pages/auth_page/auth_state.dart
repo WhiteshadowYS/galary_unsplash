@@ -1,7 +1,12 @@
+import 'dart:collection';
+
 import 'package:digital_home/models/models/user.dart';
+import 'package:digital_home/store/shared/models/reducer.dart';
 import 'package:flutter/cupertino.dart';
 
 class AuthState {
+  static const TAG = '[AuthState]';
+
   final User user;
 
   AuthState({
@@ -20,5 +25,13 @@ class AuthState {
     return AuthState(
       user: user ?? this.user,
     );
+  }
+
+  AuthState reducer(
+    dynamic action,
+  ) {
+    return Reducer<AuthState>(
+      actions: HashMap.from({}),
+    ).updateState(action, this);
   }
 }

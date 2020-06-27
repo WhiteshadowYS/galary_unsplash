@@ -35,7 +35,7 @@
 //    return store.state.bannerState.bannerList.first;
 //  }
 //
-//  static HashMap<LoadingKeys, bool> getLoaderList(Store<AppState> store) {
+//  static HashMap<LoadingKey, bool> getLoaderList(Store<AppState> store) {
 //    return store.state.loaderState.loadingKeys;
 //  }
 //}

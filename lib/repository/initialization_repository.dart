@@ -1,3 +1,7 @@
+import 'package:digital_home/models/models/user.dart';
+import 'package:digital_home/network/shared/base_response.dart';
+import 'package:digital_home/services/initialize_service.dart';
+
 class InitializationRepository {
   // region [Initialize]
   static const String TAG = '[InitializationRepository]';
@@ -9,9 +13,7 @@ class InitializationRepository {
   static InitializationRepository get instance => _instance;
   // endregion
 
-  Future<void> initialization() async {
-    await Future.delayed(Duration(seconds: 1));
-
-    return;
+  Future<BaseResponse<User>> initialization() {
+    return InitializeService.instance.initialize();
   }
 }

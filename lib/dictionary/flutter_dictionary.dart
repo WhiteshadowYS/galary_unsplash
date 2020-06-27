@@ -45,7 +45,7 @@ class FlutterDictionaryDelegate extends LocalizationsDelegate<FlutterDictionary>
   ///locales added here are supported by the dictionary, but not yet by the app
   @override
   bool isSupported(Locale locale) {
-    return ['en', 'ru', 'uk'].contains(locale.languageCode);
+    return ['en', 'ru'].contains(locale.languageCode);
   }
 
   @override
