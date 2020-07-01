@@ -4,8 +4,8 @@ import 'package:redux/redux.dart';
 
 class LoaderSelectors {
   static bool getValueForLoadingKey(Store<AppState> store, LoaderKey loaderKey) {
-    int index = store.state.loaderState.loaders.indexWhere((loader) => loader.loaderKey == loaderKey);
+    int index = store.state.loaderState.loaders.indexWhere((loader) => loader.loaderKey == loaderKey ?? loader.state);
 
-    return index != -1 ? true : false;
+    return index != -1;
   }
 }

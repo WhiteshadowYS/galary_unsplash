@@ -1,6 +1,4 @@
 import 'dart:collection';
-import 'dart:html';
-
 import 'package:digital_home/store/shared/loader/loader_actions.dart';
 import 'package:digital_home/store/shared/models/loader.dart';
 import 'package:digital_home/store/shared/models/reducer.dart';
@@ -35,19 +33,19 @@ class LoaderState {
   LoaderState reducer(dynamic action) {
     return Reducer<LoaderState>(
       actions: HashMap.from({
-        StartLoading: (dynamic action) => startLoading(action as StartLoading),
-        StopLoading: (dynamic action) => stopLoading(action as StopLoading),
+        StartLoading: (dynamic action) => _startLoading(action as StartLoading),
+        StopLoading: (dynamic action) => _stopLoading(action as StopLoading),
       }),
     ).updateState(action, this);
   }
 
-  LoaderState startLoading(StartLoading action) {
+  LoaderState _startLoading(StartLoading action) {
     return this.copyWith(
       loaders: this.loaders..add(action.loader),
     );
   }
 
-  LoaderState stopLoading(StopLoading action) {
+  LoaderState _stopLoading(StopLoading action) {
     return this.copyWith(
       loaders: this.loaders..removeWhere((loader) => loader.loaderKey == action.loaderKey),
     );
