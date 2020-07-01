@@ -1,7 +1,7 @@
 import 'dart:collection';
 
-import 'package:digital_home/store/shared/dialog/dialog_actions.dart';
-import 'package:digital_home/store/shared/models/reducer.dart';
+import 'package:gallery_unsplash/store/shared/dialog/dialog_actions.dart';
+import 'package:gallery_unsplash/store/shared/models/reducer.dart';
 
 class DialogModuleState {
   DialogModuleState();

@@ -1,8 +1,8 @@
 import 'dart:collection';
 
-import 'package:digital_home/res/consts.dart';
-import 'package:digital_home/store/shared/language/language_actions.dart';
-import 'package:digital_home/store/shared/models/reducer.dart';
+import 'package:gallery_unsplash/res/consts.dart';
+import 'package:gallery_unsplash/store/shared/language/language_actions.dart';
+import 'package:gallery_unsplash/store/shared/models/reducer.dart';
 import 'package:flutter/cupertino.dart';
 
 class LanguageState {

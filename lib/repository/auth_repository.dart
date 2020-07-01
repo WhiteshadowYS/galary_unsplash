@@ -1,7 +1,7 @@
-import 'package:digital_home/models/dto/auth_request_dto.dart';
-import 'package:digital_home/models/models/user.dart';
-import 'package:digital_home/network/shared/base_response.dart';
-import 'package:digital_home/services/auth_service.dart';
+import 'package:gallery_unsplash/models/dto/auth_request_dto.dart';
+import 'package:gallery_unsplash/models/models/user.dart';
+import 'package:gallery_unsplash/network/shared/base_response.dart';
+import 'package:gallery_unsplash/services/auth_service.dart';
 
 class AuthRepository {
   // region [Initialize]

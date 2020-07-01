@@ -1,4 +1,4 @@
-import 'package:digital_home/models/models/room_element.dart';
+import 'package:gallery_unsplash/models/models/room_element.dart';
 import 'package:flutter/material.dart';
 
 class RoomBoxElement extends RoomElement {

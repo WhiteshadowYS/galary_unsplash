@@ -1,8 +1,8 @@
-import 'package:digital_home/store/pages/auth_page/auth_epic.dart';
-import 'package:digital_home/store/pages/auth_page/auth_state.dart';
-import 'package:digital_home/store/shared/initialization/initialize_epic.dart';
-import 'package:digital_home/store/shared/language/language_state.dart';
-import 'package:digital_home/store/shared/loader/loader_state.dart';
+import 'package:gallery_unsplash/store/pages/auth_page/auth_epic.dart';
+import 'package:gallery_unsplash/store/pages/auth_page/auth_state.dart';
+import 'package:gallery_unsplash/store/shared/initialization/initialize_epic.dart';
+import 'package:gallery_unsplash/store/shared/language/language_state.dart';
+import 'package:gallery_unsplash/store/shared/loader/loader_state.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:redux_epics/redux_epics.dart';
 

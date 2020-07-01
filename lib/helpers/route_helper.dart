@@ -1,8 +1,8 @@
-import 'package:digital_home/res/consts.dart';
-import 'package:digital_home/ui/pages/auth_page/auth_page.dart';
-import 'package:digital_home/ui/pages/home_page/home_page.dart';
-import 'package:digital_home/ui/pages/shared/splash_screen.dart';
-import 'package:digital_home/ui/pages/shared/unknown_page.dart';
+import 'package:gallery_unsplash/res/consts.dart';
+import 'package:gallery_unsplash/ui/pages/auth_page/auth_page.dart';
+import 'package:gallery_unsplash/ui/pages/home_page/home_page.dart';
+import 'package:gallery_unsplash/ui/pages/shared/splash_screen.dart';
+import 'package:gallery_unsplash/ui/pages/shared/unknown_page.dart';
 import 'package:flutter/material.dart';
 
 class RouteHelper {

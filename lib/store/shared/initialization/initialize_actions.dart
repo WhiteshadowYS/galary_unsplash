@@ -1,4 +1,4 @@
-import 'package:digital_home/store/shared/base_action.dart';
+import 'package:gallery_unsplash/store/shared/base_action.dart';
 
 class StartInitialization extends BaseAction {
   StartInitialization() : super(type: 'StartInitialization');

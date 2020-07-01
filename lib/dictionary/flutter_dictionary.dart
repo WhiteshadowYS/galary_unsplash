@@ -1,5 +1,5 @@
-import 'package:digital_home/dictionary/data/eu.dart';
-import 'package:digital_home/dictionary/language.dart';
+import 'package:gallery_unsplash/dictionary/data/eu.dart';
+import 'package:gallery_unsplash/dictionary/language.dart';
 import 'package:flutter/foundation.dart' show SynchronousFuture;
 import 'package:flutter/material.dart';
 

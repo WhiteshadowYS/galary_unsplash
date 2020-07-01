@@ -1,4 +1,4 @@
-import 'package:digital_home/models/interfaces/i_user.dart';
+import 'package:gallery_unsplash/models/interfaces/i_user.dart';
 import 'package:flutter/material.dart';
 
 class User implements IUser {

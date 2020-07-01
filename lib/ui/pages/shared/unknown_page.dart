@@ -1,4 +1,4 @@
-import 'package:digital_home/ui/layouts/main_layout/main_layout.dart';
+import 'package:gallery_unsplash/ui/layouts/main_layout/main_layout.dart';
 import 'package:flutter/material.dart';
 
 class UnknownPage extends StatelessWidget {

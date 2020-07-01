@@ -1,5 +1,5 @@
-import 'package:digital_home/app/application.dart';
-import 'package:digital_home/store/app/app_state.dart';
+import 'package:gallery_unsplash/app/application.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';

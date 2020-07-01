@@ -1,5 +1,5 @@
-import 'package:digital_home/store/app/app_state.dart';
-import 'package:digital_home/store/shared/loader/loader_state.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
+import 'package:gallery_unsplash/store/shared/loader/loader_state.dart';
 import 'package:redux/redux.dart';
 
 class LoaderSelectors {

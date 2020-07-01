@@ -1,7 +1,7 @@
-import 'package:digital_home/models/dto/auth_request_dto.dart';
-import 'package:digital_home/models/models/user.dart';
-import 'package:digital_home/store/app/app_state.dart';
-import 'package:digital_home/store/pages/auth_page/auth_selectors.dart';
+import 'package:gallery_unsplash/models/dto/auth_request_dto.dart';
+import 'package:gallery_unsplash/models/models/user.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
+import 'package:gallery_unsplash/store/pages/auth_page/auth_selectors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:redux/redux.dart';
 

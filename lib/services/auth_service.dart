@@ -1,8 +1,8 @@
-import 'package:digital_home/models/dto/auth_request_dto.dart';
-import 'package:digital_home/models/models/user.dart';
-import 'package:digital_home/network/shared/api_error.dart';
-import 'package:digital_home/network/shared/base_response.dart';
-import 'package:digital_home/res/consts.dart';
+import 'package:gallery_unsplash/models/dto/auth_request_dto.dart';
+import 'package:gallery_unsplash/models/models/user.dart';
+import 'package:gallery_unsplash/network/shared/api_error.dart';
+import 'package:gallery_unsplash/network/shared/base_response.dart';
+import 'package:gallery_unsplash/res/consts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthService {

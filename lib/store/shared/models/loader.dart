@@ -1,6 +1,6 @@
-import 'package:digital_home/store/shared/loader/loader_state.dart';
+import 'package:gallery_unsplash/store/shared/loader/loader_state.dart';
 import 'package:flutter/material.dart';
-import 'package:digital_home/store/shared/models/dialog.dart' as dialog;
+import 'package:gallery_unsplash/store/shared/models/dialog.dart' as dialog;
 
 class LoaderDialog extends dialog.Dialog {
   final bool state;

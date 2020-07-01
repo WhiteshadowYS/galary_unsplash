@@ -1,4 +1,4 @@
-import 'package:digital_home/network/shared/api_error.dart';
+import 'package:gallery_unsplash/network/shared/api_error.dart';
 
 /// wrapper of the responses we get from the server, to allow for easy return of
 /// error or response based on the result

@@ -1,5 +1,5 @@
-import 'package:digital_home/res/colors.dart';
-import 'package:digital_home/ui/layouts/main_layout/main_layout.dart';
+import 'package:gallery_unsplash/res/colors.dart';
+import 'package:gallery_unsplash/ui/layouts/main_layout/main_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

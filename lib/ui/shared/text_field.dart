@@ -1,5 +1,5 @@
-import 'package:digital_home/res/colors.dart';
-import 'package:digital_home/res/font_styles.dart';
+import 'package:gallery_unsplash/res/colors.dart';
+import 'package:gallery_unsplash/res/font_styles.dart';
 import 'package:flutter/material.dart';
 
 class MainTextField extends StatefulWidget {

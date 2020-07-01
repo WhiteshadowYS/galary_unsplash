@@ -1,4 +1,4 @@
-import 'package:digital_home/network/shared/api_error.dart';
+import 'package:gallery_unsplash/network/shared/api_error.dart';
 import 'package:flutter/material.dart';
 
 class BaseAction {

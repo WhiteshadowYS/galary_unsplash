@@ -1,6 +1,6 @@
-import 'package:digital_home/models/dto/auth_request_dto.dart';
-import 'package:digital_home/store/app/app_state.dart';
-import 'package:digital_home/store/pages/auth_page/auth_action.dart';
+import 'package:gallery_unsplash/models/dto/auth_request_dto.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
+import 'package:gallery_unsplash/store/pages/auth_page/auth_action.dart';
 import 'package:redux/redux.dart';
 
 class AuthSelectors {

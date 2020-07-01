@@ -1,8 +1,8 @@
-import 'package:digital_home/res/colors.dart';
-import 'package:digital_home/store/app/app_state.dart';
-import 'package:digital_home/ui/layouts/main_layout/main_layout.dart';
-import 'package:digital_home/ui/pages/home_page/home_page_view_model.dart';
-import 'package:digital_home/ui/pages/shared/menu_button.dart';
+import 'package:gallery_unsplash/res/colors.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
+import 'package:gallery_unsplash/ui/layouts/main_layout/main_layout.dart';
+import 'package:gallery_unsplash/ui/pages/home_page/home_page_view_model.dart';
+import 'package:gallery_unsplash/ui/pages/shared/menu_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

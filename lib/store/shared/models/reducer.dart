@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-import 'package:digital_home/res/consts.dart';
+import 'package:gallery_unsplash/res/consts.dart';
 import 'package:flutter/cupertino.dart';
 
 class Reducer<T> {

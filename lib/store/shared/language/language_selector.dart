@@ -1,6 +1,6 @@
-import 'package:digital_home/res/typedef.dart';
-import 'package:digital_home/store/app/app_state.dart';
-import 'package:digital_home/store/shared/language/language_actions.dart';
+import 'package:gallery_unsplash/res/typedef.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
+import 'package:gallery_unsplash/store/shared/language/language_actions.dart';
 import 'package:redux/redux.dart';
 
 class LanguageSelector {

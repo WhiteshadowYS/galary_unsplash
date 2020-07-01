@@ -1,4 +1,4 @@
-import 'package:digital_home/res/colors.dart';
+import 'package:gallery_unsplash/res/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

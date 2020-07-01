@@ -1,5 +1,5 @@
-import 'package:digital_home/dictionary/splitted_language/auth.dart';
-import 'package:digital_home/dictionary/splitted_language/general_language.dart';
+import 'package:gallery_unsplash/dictionary/splitted_language/auth.dart';
+import 'package:gallery_unsplash/dictionary/splitted_language/general_language.dart';
 import 'package:flutter/cupertino.dart';
 
 class Language {

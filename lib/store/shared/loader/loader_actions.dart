@@ -1,6 +1,6 @@
-import 'package:digital_home/store/shared/base_action.dart';
-import 'package:digital_home/store/shared/loader/loader_state.dart';
-import 'package:digital_home/store/shared/models/loader.dart';
+import 'package:gallery_unsplash/store/shared/base_action.dart';
+import 'package:gallery_unsplash/store/shared/loader/loader_state.dart';
+import 'package:gallery_unsplash/store/shared/models/loader.dart';
 import 'package:flutter/cupertino.dart';
 
 // region [LOADING ACTIONS]

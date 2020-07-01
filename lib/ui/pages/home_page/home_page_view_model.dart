@@ -1,7 +1,7 @@
-import 'package:digital_home/models/models/room.dart';
-import 'package:digital_home/models/models/room_element.dart';
-import 'package:digital_home/models/models/room_elements_types/room_box_element.dart';
-import 'package:digital_home/store/app/app_state.dart';
+import 'package:gallery_unsplash/models/models/room.dart';
+import 'package:gallery_unsplash/models/models/room_element.dart';
+import 'package:gallery_unsplash/models/models/room_elements_types/room_box_element.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:redux/redux.dart';

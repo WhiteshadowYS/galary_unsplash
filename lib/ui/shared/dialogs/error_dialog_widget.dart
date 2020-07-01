@@ -1,4 +1,4 @@
-import 'package:digital_home/store/shared/models/error_dialog.dart';
+import 'package:gallery_unsplash/store/shared/models/error_dialog.dart';
 import 'package:flutter/material.dart';
 
 class ErrorDialogWidget extends StatefulWidget {

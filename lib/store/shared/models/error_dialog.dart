@@ -1,6 +1,6 @@
-import 'package:digital_home/ui/shared/dialogs/error_dialog_widget.dart';
+import 'package:gallery_unsplash/ui/shared/dialogs/error_dialog_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:digital_home/store/shared/models/dialog.dart' as dialog;
+import 'package:gallery_unsplash/store/shared/models/dialog.dart' as dialog;
 import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';
 
 class ErrorDialog extends dialog.Dialog {

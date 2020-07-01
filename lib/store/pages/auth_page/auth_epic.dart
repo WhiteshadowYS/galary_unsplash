@@ -1,7 +1,7 @@
-import 'package:digital_home/repository/auth_repository.dart';
-import 'package:digital_home/res/consts.dart';
-import 'package:digital_home/store/app/app_state.dart';
-import 'package:digital_home/store/pages/auth_page/auth_action.dart';
+import 'package:gallery_unsplash/repository/auth_repository.dart';
+import 'package:gallery_unsplash/res/consts.dart';
+import 'package:gallery_unsplash/store/app/app_state.dart';
+import 'package:gallery_unsplash/store/pages/auth_page/auth_action.dart';
 import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:rxdart/rxdart.dart';

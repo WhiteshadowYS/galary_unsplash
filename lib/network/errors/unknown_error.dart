@@ -1,5 +1,5 @@
-import 'package:digital_home/network/shared/api_error_type.dart';
-import 'package:digital_home/network/shared/api_error.dart';
+import 'package:gallery_unsplash/network/shared/api_error_type.dart';
+import 'package:gallery_unsplash/network/shared/api_error.dart';
 
 class UnknownError extends APIError {
   UnknownError() : super(

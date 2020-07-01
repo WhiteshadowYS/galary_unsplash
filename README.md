@@ -1,4 +1,4 @@
-# digital_home
+# gallery_unsplash
 
 A new Flutter project.
 

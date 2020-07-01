@@ -1,6 +1,6 @@
-import 'package:digital_home/store/shared/loader/loader_state.dart';
-import 'package:digital_home/store/shared/models/loader.dart';
-import 'package:digital_home/ui/shared/lodaers/default_loader_widget.dart';
+import 'package:gallery_unsplash/store/shared/loader/loader_state.dart';
+import 'package:gallery_unsplash/store/shared/models/loader.dart';
+import 'package:gallery_unsplash/ui/shared/lodaers/default_loader_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';

@@ -1,4 +1,4 @@
-import 'package:digital_home/store/shared/base_action.dart';
+import 'package:gallery_unsplash/store/shared/base_action.dart';
 import 'package:flutter/cupertino.dart';
 
 class ChangeLanguageAction extends BaseAction {
