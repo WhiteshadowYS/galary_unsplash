@@ -19,7 +19,7 @@ class LogoText extends StatelessWidget {
           alignment: Alignment.centerLeft,
           width: size * 4,
           child: Text(
-            'Smart',
+            'Gallery',
             style: GoogleFonts.lato(
               fontSize: size,
               fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class LogoText extends StatelessWidget {
           alignment: Alignment.centerRight,
           width: size * 4,
           child: Text(
-            'Home',
+            'Unsplash',
             style: GoogleFonts.lato(
               fontSize: size,
               fontWeight: FontWeight.w300,

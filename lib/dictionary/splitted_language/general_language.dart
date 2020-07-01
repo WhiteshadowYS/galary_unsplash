@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
 class GeneralLanguage {
   final String appTitle;
 
   GeneralLanguage({
-    this.appTitle,
+    @required this.appTitle,
   });
 }

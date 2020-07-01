@@ -1,5 +1,5 @@
-import 'package:gallery_unsplash/models/interfaces/i_user.dart';
 import 'package:flutter/material.dart';
+import 'package:gallery_unsplash/models/interfaces/i_user.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 @JsonSerializable(
@@ -7,7 +7,7 @@ import 'package:json_annotation/json_annotation.dart';
   checked: true,
   explicitToJson: true,
 )
-class User implements IUser {
+class PhotoUser implements IUser {
   @override
   @JsonKey(name: "id", required: false, nullable: true)
   final String id;
@@ -25,7 +25,7 @@ class User implements IUser {
   final String second_name;
 
   @override
-  User({
+  PhotoUser({
     @required this.id,
     @required this.userName,
     @required this.first_name,

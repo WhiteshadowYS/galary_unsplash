@@ -1,14 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';
 import 'package:gallery_unsplash/dictionary/flutter_dictionary.dart';
 import 'package:gallery_unsplash/helpers/route_helper.dart';
 import 'package:gallery_unsplash/res/consts.dart';
 import 'package:gallery_unsplash/store/app/app_state.dart';
 import 'package:gallery_unsplash/store/shared/initialization/initialize_selectors.dart';
 import 'package:gallery_unsplash/ui/pages/shared/splash_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_navigation/flutter_redux_navigation.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:redux/redux.dart';
 
 class Application extends StatefulWidget {

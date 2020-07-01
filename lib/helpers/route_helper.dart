@@ -1,6 +1,6 @@
 import 'package:gallery_unsplash/res/consts.dart';
-import 'package:gallery_unsplash/ui/pages/auth_page/auth_page.dart';
-import 'package:gallery_unsplash/ui/pages/home_page/home_page.dart';
+import 'package:gallery_unsplash/store/pages/list_of_photos/list_of_photos_page.dart';
+import 'package:gallery_unsplash/store/pages/single_photo/single_photo_page.dart';
 import 'package:gallery_unsplash/ui/pages/shared/splash_screen.dart';
 import 'package:gallery_unsplash/ui/pages/shared/unknown_page.dart';
 import 'package:flutter/material.dart';
@@ -24,16 +24,16 @@ class RouteHelper {
           page: SplashScreen(),
         );
 
-      case ROUTE_AUTH_PAGE:
+      case ROUTE_LIST_OF_PHOTO_PAGE:
         return _defaultRoute(
           settings: settings,
-          page: AuthPage(),
+          page: ListOfPhotosPage(),
         );
 
-      case ROUTE_HOME_PAGE:
+      case ROUTE_SINGLE_PHOTO_PAGE:
         return _defaultRoute(
           settings: settings,
-          page: HomePage(),
+          page: SinglePhotoPage(),
         );
 
       default:

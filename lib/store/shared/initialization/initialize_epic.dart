@@ -21,7 +21,7 @@ class InitializeEpics {
             return null;
           }
 
-          return NavigateToAction.pushNamedAndRemoveUntil(ROUTE_HOME_PAGE, (route) => false);
+          return NavigateToAction.pushNamedAndRemoveUntil(ROUTE_LIST_OF_PHOTO_PAGE, (route) => false);
         }),
       );
     });

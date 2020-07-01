@@ -26,4 +26,18 @@ class Fonts {
       fontSize: size,
     );
   }
+
+  static TextStyle pagesTitle({double size = 20.0}) {
+    return GoogleFonts.roboto(
+      color: WHITE,
+      fontSize: ScreenUtil().setSp(size),
+    );
+  }
+
+  static TextStyle primary({double size = 16.0}) {
+    return GoogleFonts.roboto(
+      color: PRIMARY_COLOR,
+      fontSize: ScreenUtil().setSp(size),
+    );
+  }
 }

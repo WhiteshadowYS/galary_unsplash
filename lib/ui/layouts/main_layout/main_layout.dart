@@ -6,18 +6,24 @@ class MainLayout extends StatelessWidget {
   final PreferredSizeWidget appBar;
   final Color bgColor;
   final Widget child;
+  final bool Function() willPopScope;
 
   MainLayout({
     @required this.child,
     this.appBar,
     this.bgColor = BG_COLOR,
     this.resizeToAvoidBottomPadding = false,
+    this.willPopScope,
   }) : assert(child != null, throw ('Child must be initialize'));
 
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
+        if (willPopScope != null) {
+          return willPopScope();
+        }
+
         return false;
       },
       child: Scaffold(
@@ -27,6 +33,7 @@ class MainLayout extends StatelessWidget {
         body: Container(
           width: double.infinity,
           height: double.infinity,
+          padding: const EdgeInsets.all(16.0),
           child: child,
         ),
       ),
